@@ -1,0 +1,153 @@
+body {
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    background-color: lightblue;
+    color: #333;
+}
+
+
+
+h2 {
+    font-size: 30px;
+    text-align: left;
+    color: rgb(9, 9, 75);
+    font-weight: bold;
+}
+
+
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+    color: whitesmoke;
+    position: absolute
+}
+h3.contact {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    color: whitesmoke;
+    margin: 0;
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap; 
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+.img {
+    width: 20%;
+    height: auto;
+    border-radius: 40px;
+    margin-top: 50px;
+    display: block;
+    margin: 0 auto
+    
+}
+
+
+
+.dark-modeBtn {
+    margin-right: 30%;
+    margin-left: 15px;
+    background-color: black;
+    color: white;
+    background: linear-gradient(145deg, #ffffff, #e6f2ff);
+    color: #0077cc;
+    padding: 10px 20px;
+    border-radius:20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 119, 204, 0.4);
+    transition: all 0.4s ease-in-out;
+    width: 140px;
+}
+
+
+
+.langBtn {
+    position: absolute;
+    right: 15px;
+    background: linear-gradient(145deg, #ffffff, #e6f2ff);
+    color: #0077cc;
+    border: 2px solid #0077cc;
+    padding: 10px 20px;
+    border-radius:20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 119, 204, 0.4);
+    transition: all 0.4s ease-in-out;
+    width: 120px;
+}
+  
+.langBtn:hover, .dark-modeBtn:hover {
+    background: #6bb0e0;
+    color: white;
+    transform: scale(0.95);
+    box-shadow: 0 6px 18px rgba(0, 119, 204, 0.5);
+}
+
+.dark-mode {
+    background-color: white;
+}
+.dark-mode h3 {
+    color: black !important;
+}
+
+
+
+.langBtn.hebrew {
+    background-color: #0077cc;
+  }
+  
+.langBtn.english {
+    background-color: #00aa55;
+}
+
+
+
+
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: 60px;
+
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
